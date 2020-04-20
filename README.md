@@ -8,7 +8,7 @@ Jeff App Chatbot made with Spring Boot, Dialogflow, Websocket and Angular 9.
 First setup authentication
 
 ```cmd
-set GOOGLE_APPLICATION_CREDENTIALS=/chatbot/src/main/resources/jeff-app-chatbot-htsnrj-49c34902154e.json
+set GOOGLE_APPLICATION_CREDENTIALS=/path-to-chatbot/src/main/resources/jeff-app-chatbot-htsnrj-49c34902154e.json
 ```
 
 Import the project to the IDE of your choosing as a Maven project.
