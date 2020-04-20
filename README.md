@@ -24,6 +24,6 @@ If you want to run the application locally in the production mode, run `mvn spri
 Run `npm i` to install the required libraries.
 Run `ng serve` for a dev server.
 
-Navigate to `http://localhost:4200/`.
+Navigate to http://localhost:4200/ in your browser..
 
 The browser will automatically reload if you change any of the source files.
