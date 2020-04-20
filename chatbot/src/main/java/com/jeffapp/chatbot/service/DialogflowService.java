@@ -40,7 +40,6 @@ public class DialogflowService {
     try (SessionsClient sessionsClient = SessionsClient.create()) {
       // Set the session name using the sessionId (UUID) and projectID (my-project-id)
       SessionName session = SessionName.of(projectId, sessionId);
-      System.out.println("Session Path: " + session.toString());
 
       // Detect intents for each text input
       // Set the text (hello) and language code (en-US) for the query
@@ -62,8 +61,11 @@ public class DialogflowService {
       for(Intent.Message msg : queryResult.getFulfillmentMessagesList()) {
         Message mess = new Message();
         mess.setSender(JEFF_APP);
-        mess.setContent(queryResult.getFulfillmentText());
-
+        if(!Strings.isNullOrEmpty(queryResult.getFulfillmentText())) {
+          mess.setContent(queryResult.getFulfillmentText());
+        } else if (null != msg.getText() && msg.getText().getTextCount() > 0) {
+          mess.setContent(msg.getText().getText(0));
+        }
 
         if(msg.getCard() != null && !Strings.isNullOrEmpty(msg.getCard().getTitle())) {
           mess.setImage(msg.getCard().getImageUri());

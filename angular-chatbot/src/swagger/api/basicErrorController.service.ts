@@ -67,7 +67,7 @@ export class BasicErrorControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -82,9 +82,9 @@ export class BasicErrorControllerService {
         return this.httpClient.delete<{ [key: string]: any; }>(`${this.basePath}/error`,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }
@@ -103,7 +103,7 @@ export class BasicErrorControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -118,9 +118,9 @@ export class BasicErrorControllerService {
         return this.httpClient.get<{ [key: string]: any; }>(`${this.basePath}/error`,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }
@@ -139,7 +139,7 @@ export class BasicErrorControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -155,9 +155,9 @@ export class BasicErrorControllerService {
         return this.httpClient.head<{ [key: string]: any; }>(`${this.basePath}/error`,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }
@@ -176,7 +176,7 @@ export class BasicErrorControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -192,9 +192,9 @@ export class BasicErrorControllerService {
         return this.httpClient.options<{ [key: string]: any; }>(`${this.basePath}/error`,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }
@@ -213,7 +213,7 @@ export class BasicErrorControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -230,9 +230,9 @@ export class BasicErrorControllerService {
             null,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }
@@ -251,7 +251,7 @@ export class BasicErrorControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -268,9 +268,9 @@ export class BasicErrorControllerService {
             null,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }
@@ -289,7 +289,7 @@ export class BasicErrorControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -306,9 +306,9 @@ export class BasicErrorControllerService {
             null,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }

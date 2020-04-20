@@ -74,7 +74,7 @@ export class ChatControllerService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             '*/*'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -95,9 +95,9 @@ export class ChatControllerService {
             message,
             {
                 withCredentials: this.configuration.withCredentials,
-                headers: headers,
-                observe: observe,
-                reportProgress: reportProgress
+                headers,
+                observe,
+                reportProgress
             }
         );
     }
