@@ -36,8 +36,6 @@ public class DialogflowServiceUnitTests {
 
     messages = dialogflowService.request(sessionId, "Home");
     assertTrue(messages.size() > 0);
-    Message lastMsg = messages.get(messages.size() - 1);
-    assertTrue(lastMsg.isEnd());
   }
 
 }

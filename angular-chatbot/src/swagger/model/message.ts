@@ -15,5 +15,4 @@ export interface Message {
     content?: string;
     sender?: string;
     image?: string;
-    end?: boolean;
 }

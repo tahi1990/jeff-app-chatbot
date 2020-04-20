@@ -52,10 +52,6 @@ export class ChatbotComponent implements OnInit {
   onMessageReceived(message) {
     const msg: Message = JSON.parse(message.body);
 
-    if (msg.end) {
-      this.end = true;
-    }
-
     const msgType = msg.image ? 'file' : 'text';
     this.messages.push({
       text: msg.content,

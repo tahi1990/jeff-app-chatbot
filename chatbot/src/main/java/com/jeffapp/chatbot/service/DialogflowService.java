@@ -72,10 +72,6 @@ public class DialogflowService {
           mess.setContent(msg.getCard().getTitle());
         }
 
-        if(queryResult.getDiagnosticInfo().getFieldsMap().get("end_conversation") != null && queryResult.getDiagnosticInfo().getFieldsMap().get("end_conversation").getBoolValue()) {
-          mess.setEnd(true);
-        }
-
         messages.add(mess);
 
       }

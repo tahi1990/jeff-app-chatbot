@@ -20,7 +20,4 @@ public class Message {
   @Getter @Setter
   private String image;
 
-  @Getter @Setter
-  private boolean end;
-
 }
