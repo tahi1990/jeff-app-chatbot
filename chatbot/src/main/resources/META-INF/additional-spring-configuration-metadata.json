@@ -1,8 +1,0 @@
-{
-  "properties": [
-    {
-      "name": "google.dialogflow.projectid",
-      "type": "java.lang.String",
-      "description": "Description for google.dialogflow.projectid."
-    }
-  ] }
